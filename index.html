@@ -27,63 +27,83 @@ src="https://www.facebook.com/tr?id=1207658523790750&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Chat</title>
+    <title>Best Video</title>
     <style>
+        /* Styling the entire page */
         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
             font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Container for the message box */
+        .message-box {
             text-align: center;
-            background-color: #f0f0f0;
-        }
-        .container {
-            margin: 50px auto;
+            background-color: #333;
             padding: 20px;
-            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
+            width: 300px;
         }
-        .profile-pic {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
+
+        /* Icon styling */
+        .icon {
+            font-size: 80px;
+            color: #ff0033;
+            margin-bottom: 15px;
         }
+
+        /* Main text */
+        .message {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
         .button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            background-color: #ff9900;
+            color: #fff;
             border: none;
+            padding: 10px 20px;
             border-radius: 5px;
             font-size: 16px;
+            cursor: pointer;
+            width: 100px;
         }
-        .button-green {
-            background-color: #25D366;
-            color: white;
-        }
-        .button-white {
-            background-color: white;
-            color: #25D366;
-            border: 2px solid #25D366;
-        }
-        .button-dark-green {
-            background-color: #128C7E;
-            color: white;
+
+        .button:hover {
+            background-color: #e68a00;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCo0Zq2iw4nUP7ey23tT0p9AJJK0TNnGSsyDJ0MJAQuwfVXksvEn1kp5Aui3MlmT0MAiMPKqXO4NQR0YyuKDLcWasB5kvjQ8aYNOcdvBokWZmj92M0njQEbxUzrB-0PFrcFoO8wykzqJQrpSt9acdvsXtg6d6CXUHz9uXjO6uwgzVQ4dJKc4rB4p9xYCk/s568/Screenshot%202024-10-27%20220657.png" alt="Profile Picture" class="profile-pic">
-        <h2>HANNAH</h2>
-        <h3>Bem-vindo ao meu perfil! ❤️ Eu amo-te! Clique abaixo para ver o meu vídeo.
-Como assistir:
-1.º Clique no link do vídeo abaixo.
-2.º Aguarde 10 segundos e a reprodução será iniciada automaticamente.
-Desfrutar! 😊🎥 👇👇👇</h3>
-       <a href="https://impulseaversion.com/p1zzdw3f9?key=dc98018eb574131d1f9c5fc1117f3b68" class="button button-green" target="_blank">clique aqui para ver o vídeo</a>
-<a href="https://impulseaversion.com/p1zzdw3f9?key=dc98018eb574131d1f9c5fc1117f3b68" target="_blank">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHlhwiw4ybRe5NGyC6HLtLqdMgGMD8STQb68Uoo4WgIbn02ZCZ6JlfqpBrxd3mE3FBybpxGPhM6C5Us83ArmoBS6tdQRSZ7uq9bmWY9vq2hKwOp48KiL_dMmYSh5RcCabw09pWRn1dH5UPWjZYk1mQE8PlFLigPUwiDObgY-RgMQNXTXNYWpQlwMcH2ms/s805/video-player-interface-isolated-transparent-background-video-streaming-template_97458-480%20(2).jpg" alt="Description of the image" width="300" height="200">
-</a>
-</body>
+    <div class="message-box">
+        <!-- Icon representing the error -->
+        <div class="icon">✖️</div>
+        
+        <!-- Message text -->
+        <div class="message">
+            You have been disconnected.<br>
+            Check connection and refresh<br>
+            your browser, or go back to<br>
+            landing page
+        </div>
 
+        <!-- Button container with HOME and REFRESH buttons -->
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='index.html'">HOME</button>
+            <button class="button" onclick="location.reload()">REFRESH</button>
+        </div>
+    </div>
+</body>
 </html>
