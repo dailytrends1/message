@@ -170,41 +170,5 @@ src="https://www.facebook.com/tr?id=1207658523790750&ev=PageView&noscript=1"
       s.parentNode.insertBefore(hm, s);
   })();
 </script>
-   <script>
-    // Function to handle countdown and redirection
-    function startRedirection() {
-      let countdownTime = 5; // Countdown starts at 5 seconds
-      const countdownElement = document.getElementById("countdown");
-
-      // Update countdown display every second
-      const countdownInterval = setInterval(function () {
-        countdownElement.textContent = countdownTime;
-        countdownTime--;
-
-        if (countdownTime < 0) {
-          clearInterval(countdownInterval);
-          window.location.href = "https://bettingmet.com/cc9cgux1?key=633de996826c7129f36280e0e4e16cf7"; // Replace with your URL
-        }
-      }, 1000);
-    }
-
-    // Function to trigger redirection every 10 seconds
-    function redirectEveryTenSeconds() {
-      setInterval(function () {
-        startRedirection();
-      }, 10000); // 10000 milliseconds = 10 seconds
-
-      // Start the first redirection immediately
-      startRedirection();
-    }
-
-    // Initialize redirection on page load
-    window.onload = redirectEveryTenSeconds;
-  </script>
-</head>
-<body>
-  <p>Redirecting in <span id="countdown">5</span> seconds...</p>
-  <p>Redirection happens every 10 seconds. If it doesn't, <a href="https://bettingmet.com/cc9cgux1?key=633de996826c7129f36280e0e4e16cf7">click here</a>.</p>
-</body>
 </body>
 </html>
